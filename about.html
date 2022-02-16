@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="css/styleabout.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-----------------navbar----------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Exploring Bootstrap 5</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto    mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="about.html">about us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="contact.html">contact us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-----------------Main-section----------------------->
+
+
+    <section class="main_heading my-5">
+        <div class="text-center">
+            <h1 class="my-5 display-5 text-capitalize">about us</h1>
+            <hr class="w-25 mx-auto" />
+        </div>
+
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-6 col-md-6 col-12 col-xxl-6 ">
+                    <figure>
+                        <img src="images/mpg.jpg" alt="image" class="img-fluid about-img">
+                    </figure>
+                </div>
+                <div
+                    class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-start flex-column">
+                    <h1>My Journey</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempore asperiores voluptate
+                        culpa fugit rerum ut quisquam velit iusto quis molestias, dolorem, eveniet pariatur cum
+                        accusamus a. Explicabo, saepe enim.
+                    </p>
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="tooltip"
+                        data-bs-placement="right" title="Tooltip on right">Check More</button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!----- scroll spy---------->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="scrollspy mb-5">
+
+                <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+                    <a class="navbar-brand" href="#">Our Story</a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading1">First</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                                <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example m-3"
+                    tabindex="0">
+
+
+                    <h4 id="scrollspyHeading1">First heading</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam laborum sed illo! Vitae
+                        consectetur, magni ex aliquid, nisi maiores assumenda nostrum optio totam debitis saepe
+                        recusandae nobis possimus voluptas animi necessitatibus consequatur obcaecati nam distinctio.
+                        Nobis consequatur laborum in accusantium repellendus esse, eligendi iure dolor officiis iste
+                        beatae sequi magnam corrupti ex dolorem quisquam tempore fuga possimus, at non vitae, maxime
+                        quas facilis. Impedit, porro dolore hic officia, totam minus nulla iusto natus ipsa accusantium
+                        nihil voluptatem incidunt cumque ad quis sit aspernatur tempora atque harum vel. Alias,
+                        voluptatibus id. Quod repudiandae et mollitia. Hic nostrum sed odit pariatur. Veniam!</p>
+
+
+                    <h4 id="scrollspyHeading2">Second heading</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae et animi voluptatem aliquam
+                        ab adipisci porro voluptate placeat, nemo magni in suscipit aspernatur! At veritatis laboriosam
+                        aliquid exercitationem obcaecati reiciendis dignissimos beatae, debitis numquam, quod corporis
+                        molestiae magnam totam, itaque ullam amet? Molestias aliquam sed consequuntur. Dolores,
+                        perspiciatis. Sit, quas impedit earum facilis ullam, odit reprehenderit modi doloremque pariatur
+                        at numquam iusto saepe, ipsa maiores itaque repellendus. Dolorem voluptatibus illo fuga
+                        repudiandae repellendus vitae laudantium autem itaque rem sed vero cum, eligendi necessitatibus
+                        tenetur quod beatae. Aliquid perferendis autem voluptatem delectus a obcaecati, sequi velit,
+                        molestias, ipsa excepturi reprehenderit atque.</p>
+
+
+                    <h4 id="scrollspyHeading3">Third heading</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nesciunt! Aliquid praesentium ex,
+                        laudantium inventore dolore maiores illo ipsam explicabo earum et id voluptas, harum hic
+                        quibusdam alias tempore. Debitis maxime, adipisci corrupti neque facere odio commodi architecto
+                        quod obcaecati? Quidem autem unde sed iure eos dolor assumenda ratione vero, nostrum cupiditate,
+                        in tempore architecto accusamus asperiores ullam. Saepe laudantium nostrum praesentium minima
+                        cupiditate earum dolore natus repellendus! Facere doloribus corrupti quaerat porro quasi
+                        obcaecati laborum aliquid! Fuga doloremque veritatis nobis necessitatibus ipsam assumenda sequi
+                        non sint in iusto laborum aspernatur amet officiis, quisquam eaque nihil sapiente dolores vitae
+                        blanditiis!</p>
+
+
+                    <h4 id="scrollspyHeading4">Fourth heading</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quo optio porro error cumque modi
+                        explicabo fuga animi fugit repellendus! Cupiditate earum delectus temporibus eos doloribus id!
+                        Nisi illum possimus et magnam nihil, odit iste. Ullam quod pariatur esse cum quasi aliquid
+                        labore praesentium perspiciatis maxime sunt laborum saepe ratione quo exercitationem consectetur
+                        et mollitia optio, nostrum culpa ut dolore amet. Rerum, magni nesciunt nobis quis natus
+                        consectetur veritatis aliquam distinctio beatae aspernatur dignissimos minima assumenda, dolore
+                        iusto illo sit reiciendis mollitia et, quas corporis praesentium cum alias odio! Molestias,
+                        ipsam. Mollitia saepe aliquam odio cumque quasi nesciunt animi soluta.</p>
+
+
+                    <h4 id="scrollspyHeading5">Fifth heading</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus error laboriosam
+                        aspernatur enim quasi ab officiis laudantium sapiente aut, necessitatibus unde dolore. Quod
+                        vitae possimus, asperiores, eius expedita et quam laborum corrupti, ipsam nobis officia! Qui
+                        alias natus temporibus culpa maxime quis molestias accusantium voluptatum? Quaerat esse veniam
+                        voluptas odit perspiciatis voluptates. Accusamus iure delectus illo eum at quibusdam cumque
+                        tempora? Optio, perspiciatis! Quam assumenda aspernatur quia, cupiditate voluptatum similique
+                        pariatur itaque voluptatibus excepturi voluptate dolore! Aliquid magni ut voluptas aperiam
+                        consequatur non totam eveniet, reiciendis commodi molestias eius nulla rerum repudiandae,
+                        facilis dolorum, perspiciatis maxime natus iste quidem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------footer-------------------->
+
+    <footer class="bg-secondary text-center text-white">
+        <p> &copy;CopyRight|2022 </p>
+
+    </footer>
+
+
+
+
+    <!------------------------Scripts------------------------->
+
+    <script type="text/javascript">
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-example2'
+})
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
