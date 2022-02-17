@@ -28,6 +28,10 @@
 .offer_style .row{
     --bs-gutter-x: 0;
 }
+.services .card{
+    max-width: 540px;
+}
+
 
  footer p{
     margin:0;
